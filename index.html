@@ -1,27 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read Our Blog & Testimonial Section</title>
+  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Document</title>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
-<body>
-  <!-- Section 1: Bank1 -->
-  <section>
-    <!-- คนที่ได้รับมอบหมายให้ทำ Section 1 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
+<body class="bg-white text-slate-800 antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- ========================================== -->
+  <!-- SECTION 1: READ OUR BLOG                   -->
+  <!-- ========================================== -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <!-- Header -->
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#1B254B] mb-12 md:mb-16 tracking-tight">
+      Read Our Blog
+    </h2>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-[#F8FAFC] rounded-2xl p-4 sm:p-5 transition-all duration-300 hover:shadow-lg flex flex-col justify-between">
+        <div>
+          <div class="aspect-[16/10] w-full rounded-xl overflow-hidden bg-slate-300 mb-5">
+            <img 
+              src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=800&q=80" 
+              alt="Design Marketing" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <span class="text-xs font-semibold text-slate-400 block mb-2">Design</span>
+          <h3 class="text-base sm:text-lg font-bold text-[#1B254B] leading-snug mb-4">
+            How great Content helps drive success in Marketplace
+          </h3>
+        </div>
+        <a href="#" class="inline-flex items-center text-xs font-bold text-[#4F46E5] hover:text-indigo-800 transition-colors gap-1.5 mt-2">
+          Read More 
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#F8FAFC] rounded-2xl p-4 sm:p-5 transition-all duration-300 hover:shadow-lg flex flex-col justify-between">
+        <div>
+          <div class="aspect-[16/10] w-full rounded-xl overflow-hidden bg-slate-300 mb-5">
+            <img 
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
+              alt="Marketing Strategy" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <span class="text-xs font-semibold text-slate-400 block mb-2">Marketing</span>
+          <h3 class="text-base sm:text-lg font-bold text-[#1B254B] leading-snug mb-4">
+            Strossle International AB ranked #1 on Deloitte 2018
+          </h3>
+        </div>
+        <a href="#" class="inline-flex items-center text-xs font-bold text-[#4F46E5] hover:text-indigo-800 transition-colors gap-1.5 mt-2">
+          Read More 
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#F8FAFC] rounded-2xl p-4 sm:p-5 transition-all duration-300 hover:shadow-lg flex flex-col justify-between">
+        <div>
+          <div class="aspect-[16/10] w-full rounded-xl overflow-hidden bg-slate-300 mb-5">
+            <img 
+              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" 
+              alt="Development & Brand Safety" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <span class="text-xs font-semibold text-slate-400 block mb-2">Development</span>
+          <h3 class="text-base sm:text-lg font-bold text-[#1B254B] leading-snug mb-4">
+            What All Marketers Should Know About Brand Safe
+          </h3>
+        </div>
+        <a href="#" class="inline-flex items-center text-xs font-bold text-[#4F46E5] hover:text-indigo-800 transition-colors gap-1.5 mt-2">
+          Read More 
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
   </section>
-  <!-- Section 2: Ice -->
-  <section>
-    <!-- คนที่ได้รับมอบหมายให้ทำ Section 2 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
+
+  <!-- ========================================== -->
+  <!-- SECTION 2: TESTIMONIAL (DUAL RESPONSIVE)   -->
+  <!-- ========================================== -->
+  <section class="relative max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-24 overflow-hidden">
+
+    <!-- ---------------------------------------- -->
+    <!-- 1. MOBILE VIEW (แสดงเฉพาะจอมือถือ < 768px)  -->
+    <!-- ---------------------------------------- -->
+    <div class="block md:hidden relative min-h-[680px] w-full max-w-sm mx-auto flex flex-col justify-center items-center text-center py-8 px-4 overflow-hidden">
+      
+      <!-- เส้นวงรีแนวตั้งทรงสูง -->
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div class="w-[310px] h-[640px] border border-blue-200/60 rounded-[50%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="w-[240px] h-[520px] border border-blue-200/50 rounded-[50%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="w-[170px] h-[380px] border border-blue-100/40 rounded-[50%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+      </div>
+
+      <!-- TOP AVATARS (กลุ่มบน 3 รูป) -->
+      <div class="absolute inset-x-0 top-0 h-[180px] pointer-events-none">
+        <div class="absolute left-[26%] top-[75px] w-11 h-11 rounded-full overflow-hidden shadow-lg border-2 border-white pointer-events-auto">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Avatar Top Left" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute left-[48%] top-[105px] w-10 h-10 rounded-full overflow-hidden shadow-lg border-2 border-white pointer-events-auto">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Avatar Top Center" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute right-[20%] top-[48px] w-12 h-12 rounded-full overflow-hidden shadow-lg border-2 border-white pointer-events-auto">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Avatar Top Right" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      
+    
+      <!-- MIDDLE TEXT BLOCK -->
+      <div class="relative z-20 max-w-[180px] mx-auto my-auto py-10">
+      <blockquote class="mx-auto">  
+        <p class="text-[15px] sm:text-base font-extrabold text-[#1B254B] leading-relaxed tracking-tight">
+            “I’ve completed<br>
+            support from my<br>
+            Agency about 1 years<br>
+            ago. Their make the<br>
+            prototyping process so<br>
+            easy and faster. I feel<br>
+            this is the best apps for<br>
+            the prototyping use”
+        </p>
+      </blockquote>
+        <div class="mt-4 space-y-0.5">
+          <h4 class="text-xs font-bold text-[#00C5FF] tracking-wide">William Smith</h4>
+           <p class="text-[10px] text-slate-400 font-medium">CEO f ZaVad Company</p>
+        </div>
+      </div>
+
+
+      <!-- BOTTOM AVATARS (กลุ่มล่าง 3 รูป) -->
+      <div class="absolute inset-x-0 bottom-0 h-[180px] pointer-events-none">
+        <div class="absolute left-[24%] bottom-[65px] w-12 h-12 rounded-full overflow-hidden border-2 border-cyan-400 shadow-[0_0_20px_rgba(6,182,212,0.6)] pointer-events-auto z-10">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="William Smith Active" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute left-1/2 -translate-x-1/2 bottom-[12px] w-11 h-11 rounded-full overflow-hidden shadow-lg border-2 border-white pointer-events-auto">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Avatar Bottom Center" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute right-[22%] bottom-[45px] w-11 h-11 rounded-full overflow-hidden shadow-lg border-2 border-white pointer-events-auto">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Avatar Bottom Right" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+    </div> <!-- แท็กปิด MOBILE VIEW ที่ขาดหายไปได้รับการเติมตรงนี้แล้ว -->
+
+    <!-- ---------------------------------------- -->
+    <!-- 2. DESKTOP / TABLET VIEW (แสดงเฉพาะจอคอม >= 768px) -->
+    <!-- ---------------------------------------- -->
+    <div class="hidden md:flex relative min-h-[480px] items-center justify-center text-center">
+      
+      <!-- เส้นวงรีแนวนอนสำหรับจอคอม -->
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div class="w-[980px] lg:w-[1100px] h-[460px] lg:h-[500px] border border-blue-200/50 rounded-[50%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="w-[780px] lg:w-[880px] h-[360px] lg:h-[400px] border border-blue-200/40 rounded-[50%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="w-[580px] lg:w-[660px] h-[260px] lg:h-[300px] border border-blue-100/30 rounded-[50%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+      </div>
+
+      <!-- ข้อความตรงกลาง -->
+      <div class="relative z-20 max-w-lg lg:max-w-xl mx-auto px-4">
+        <blockquote class="mx-auto">
+          <p class="text-xl lg:text-2xl font-extrabold text-[#1B254B] leading-relaxed lg:leading-[1.7] tracking-tight">
+            “I’ve completed support from my Agency &nbsp;about 1 years ago. Their make the prototyping process so easy and faster. I feel this is the best apps for the prototyping use”
+          </p>
+        </blockquote>
+        <div class="mt-6 space-y-1">
+          <h4 class="text-sm font-bold text-[#00C5FF] tracking-wide">William Smith</h4>
+          <p class="text-xs text-slate-400 font-medium">CEO f ZaVad Company</p>
+        </div>
+      </div>
+
+      <!-- รูปฝั่งซ้าย 3 รูป (Left Side Orbit) -->
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-[20%] left-[4%] lg:left-[6%] w-14 lg:w-16 h-14 lg:h-16 rounded-full overflow-hidden bg-slate-200 shadow-lg border-2 border-white pointer-events-auto">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Marketing Specialist" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute top-[42%] left-[11%] lg:left-[13%] w-12 lg:w-14 h-12 lg:h-14 rounded-full overflow-hidden bg-slate-200 shadow-lg border-2 border-white pointer-events-auto">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Marketing Team Member" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute bottom-[18%] left-[8%] lg:left-[10%] w-11 lg:w-12 h-11 lg:h-12 rounded-full overflow-hidden bg-slate-200 shadow-md border-2 border-white pointer-events-auto">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Marketing Analyst" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- รูปฝั่งขวา 3 รูป (Right Side Orbit) -->
+        <div class="absolute top-[22%] right-[11%] lg:right-[13%] w-12 lg:w-14 h-12 lg:h-14 rounded-full overflow-hidden bg-slate-200 shadow-lg border-2 border-white pointer-events-auto">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Digital Strategist" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute bottom-[14%] right-[14%] lg:right-[17%] w-14 lg:w-16 h-14 lg:h-16 rounded-full overflow-hidden border-2 border-cyan-400 shadow-[0_0_22px_rgba(6,182,212,0.4)] pointer-events-auto">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="William Smith Active" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute top-[48%] right-[4%] lg:right-[6%] w-12 lg:w-14 h-12 lg:h-14 rounded-full overflow-hidden bg-slate-200 shadow-lg border-2 border-white pointer-events-auto">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Marketing Director" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+    </div>
+
   </section>
-   <!-- Section 3: Wan -->
-  <section>
-    <!-- คนที่ได้รับมอบหมายให้ทำ Section 3 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-  </section>
-   <!-- Section 4: Nice -->
-  <section>
-    <!-- คนที่ได้รับมอบหมายให้ทำ Section 4 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-  </section>
+
 </body>
 </html>
