@@ -24,7 +24,7 @@ body {
 
     background-color: #f7fbfd;
 
-    border: 2px solid #249eff;
+  
 
     display: flex;
     align-items: center;
@@ -147,19 +147,55 @@ body {
 
 /* IMAGE PLACEHOLDER */
 .image-placeholder {
-    width: 425px;
-    height: 508px;
+  width: 425px;
+  height: 508px;
+  position: absolute;
+  top: 47px;
+  left: calc(50% - 10px);
+  transform: translateX(-50%);
+  z-index: 2;
+  overflow: hidden;
+}
 
-    background-color: #c4c4c4;
+/* รูปภาพ */
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 
-    position: absolute;
 
-    top: 47px;
-    left: 50%;
+3. แก้ส่วน INCREMENT CARD
+/* INCREMENT CARD */
+.increment-card {
+  width: 320px;
+  height: 180px;
 
-    transform: translateX(-50%);
+  background-color: white;
+  border-radius: 17px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 
-    z-index: 2;
+  position: absolute;
+
+  right: 25px;
+  bottom: -50px;
+
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+/* IMAGE */
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 
@@ -177,7 +213,7 @@ body {
     position: absolute;
 
     right: -5px;
-    bottom: -5px;
+    bottom: -50px;
 
     z-index: 3;
 
@@ -289,9 +325,18 @@ body {
     }
 
     .orange-circle {
-        width: 380px;
-        height: 380px;
-    }
+      width: 480px;
+      height: 480px;
+      background-color: #ff6045;
+      border-radius: 50%;
+  
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  
+      z-index: 1;
+  }
 
     .circle-border {
         width: 410px;
@@ -304,9 +349,24 @@ body {
     }
 
     .increment-card {
-        right: -5px;
-        bottom: 0;
-    }
+      width: 260px;
+      height: 146px;
+  
+      background-color: white;
+      border-radius: 17px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  
+      position: absolute;
+      right: -5px;
+      bottom: -5px;
+  
+      z-index: 3;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+  }
 
 }
 
