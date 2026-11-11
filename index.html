@@ -4,13 +4,297 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./style.css">
   <title>Document</title>
 </head>
 
 <body>
   <!-- Section 1: Bank1 -->
   <section>
-    <!-- คนที่ได้รับมอบหมายให้ทำ Section 1 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
+<!-- Header -->
+<header class="header">
+    <nav class="navbar page-container">
+
+      <!-- Logo -->
+      <a href="#" class="logo">Agency</a>
+
+      <!-- Navigation -->
+      <ul class="nav-menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+
+      <!-- Login Button -->
+      <a href="#" class="login-btn">Log In</a>
+
+      <!-- Hamburger (mobile only) -->
+      <button type="button" class="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+
+    <div class="page-container hero-container">
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+
+        <h1 class="hero-title">
+          We help you<br class="br-desktop">
+          to<br class="br-mobile">
+          build your<br class="br-desktop">
+          Business
+        </h1>
+
+        <p class="hero-description">
+          Enthusiastically extend extensive customer service<br>
+          before <span class="nowrap">best-of-breed</span> convergence completely.
+        </p>
+
+        <a href="#" class="quote-btn">
+          Get a Quotes
+        </a>
+
+      </div>
+
+
+      <!-- Hero Illustration -->
+      <div class="hero-illustration">
+
+        <!-- Orbit Circles -->
+        <div class="orbit orbit-outer"></div>
+        <div class="orbit orbit-inner"></div>
+
+
+        <!-- Customer Review Card -->
+        <div class="review-card">
+
+          <div class="review-top">
+            <div class="review-avatar"></div>
+
+            <div class="review-stars">
+              ★★★★★
+            </div>
+          </div>
+
+          <p>20k+ Customer Review</p>
+
+        </div>
+
+
+        <!-- Project Done Card -->
+        <div class="project-card">
+
+          <p>Project Done</p>
+
+          <div class="project-bottom">
+            <strong>3,258</strong>
+
+            <svg
+              class="project-chart"
+              viewBox="0 0 35 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 13C7 2 13 4 18 8C23 12 27 14 34 3"
+                stroke="#FF702E"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+
+          </div>
+
+        </div>
+
+
+        <!-- Shield Icon -->
+        <div class="shield-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            width="33"
+            height="33"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12 2L20 5V11C20 16.2 16.6 20.3 12 22C7.4 20.3 4 16.2 4 11V5L12 2Z"/>
+            <path
+              d="M9 12L11 14L15.5 9.5"
+              stroke="#06BDE5"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+        </div>
+
+
+        <!-- Monthly Visitor Card -->
+        <div class="visitor-card">
+
+          <h3>Monthly Visitor</h3>
+
+          <div class="visitor-chart">
+
+            <div class="chart-labels">
+              <span>30</span>
+              <span>20</span>
+              <span>10</span>
+            </div>
+
+            <div class="chart-bars">
+              <div class="bar bar-1"></div>
+              <div class="bar bar-2"></div>
+              <div class="bar bar-3"></div>
+              <div class="bar bar-4"></div>
+              <div class="bar bar-5"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  
+<!-- Brand Logo Section -->
+<div class="brand-section">
+
+    <div class="page-container brand-container">
+  
+      <img
+        src="./image1/brand-1.png"
+        alt="Caley Peace Logo"
+        class="brand-image"
+      >
+  
+      <img
+        src="./image1/brand-2.png"
+        alt="Design Studio Logo"
+        class="brand-image"
+      >
+  
+      <img
+        src="./image1/brand-3.png"
+        alt="Harrison Industry Logo"
+        class="brand-image"
+      >
+  
+      <img
+        src="./image1/brand-4.png"
+        alt="Barbecue Logo"
+        class="brand-image"
+      >
+  
+      <img
+        src="./image1/brand-5.png"
+        alt="Design Exclusive Logo"
+        class="brand-image"
+      >
+  
+    </div>
+  
+  </div>  
+
+  <!-- Why Choose Agency Section -->
+  <div class="why-section">
+
+    <div class="page-container">
+
+      <h2 class="why-title">
+        Why Choose<br>
+        Agency!
+      </h2>
+
+
+      <div class="feature-container">
+
+        <!-- Design Card -->
+        <div class="feature-card">
+
+          <div class="feature-icon design-icon">
+
+            <img src="./image1/icon-design.svg" alt="Design icon" class="feature-img">
+
+          </div>
+
+          <h3>Design</h3>
+
+          <p>
+            Distinctively expedite real-time "outside the
+            box" thinking whereas resource maximizing.
+            Completely reinvent extensive e-tailers via
+          </p>
+
+        </div>
+
+
+        <!-- Development Card -->
+        <div class="feature-card">
+
+          <div class="feature-icon development-icon">
+
+            <img src="./image1/icon-development.svg" alt="Development icon" class="feature-img">
+
+          </div>
+
+          <h3>Development</h3>
+
+          <p>
+            Distinctively expedite real-time "outside the
+            box" thinking whereas resource maximizing.
+            Completely reinvent extensive e-tailers via
+          </p>
+
+        </div>
+
+
+        <!-- Marketing Card -->
+        <div class="feature-card">
+
+          <div class="feature-icon marketing-icon">
+
+            <img src="./image1/icon-marketing.svg" alt="Marketing icon" class="feature-img marketing-img">
+
+          </div>
+
+          <h3>Marketing</h3>
+
+          <p>
+            Distinctively expedite real-time "outside the
+            box" thinking whereas resource maximizing.
+            Completely reinvent extensive e-tailers via
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
   </section>
   <!-- Section 2: Ice -->
   <section>
